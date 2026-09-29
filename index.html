@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>San Gregorio - Bocadillos y hamburguesas en Zaragoza</title>
+  <meta name="description" content="Bar San Gregorio, en la Av. de San Gregorio, 19 (Zaragoza). Desayunos, bocadillos, hamburguesas y raciones. Mira la carta, el horario y reserva mesa por teléfono.">
+  <meta name="theme-color" content="#2a170d">
+
+  <!-- Vista previa al compartir el enlace (WhatsApp, Facebook...) -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:title" content="San Gregorio - Bocadillos y hamburguesas en Zaragoza">
+  <meta property="og:description" content="Mira la carta, el horario y cómo llegar. Reservas por teléfono.">
+
+  <!-- Icono de la pestaña (SVG incrustado, no necesita archivo) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%23c8321f'/%3E%3Ctext x='50' y='68' font-size='52' text-anchor='middle' fill='white' font-family='Georgia,serif' font-weight='bold'%3ESG%3C/text%3E%3C/svg%3E">
+
+  <!-- Tipografías: Alfa Slab One (títulos) + Hanken Grotesk (texto) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Datos estructurados para Google (aparece horario, dirección y teléfono en los resultados).
+       IMPORTANTE: cambia el teléfono por el real. -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "San Gregorio",
+    "description": "Bar de barrio con desayunos, bocadillos, hamburguesas y raciones.",
+    "servesCuisine": ["Bocadillos", "Hamburguesas", "Raciones"],
+    "priceRange": "€",
+    "telephone": "+34976000000",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Av. de San Gregorio, 19",
+      "postalCode": "50015",
+      "addressLocality": "Zaragoza",
+      "addressRegion": "Aragón",
+      "addressCountry": "ES"
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday"], "opens": "08:00", "closes": "23:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "08:00", "closes": "23:30" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "23:30" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Sunday", "opens": "09:00", "closes": "23:00" }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <!-- Iconos reutilizables -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="i-phone" viewBox="0 0 24 24">
+      <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+    </symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24">
+      <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z"/>
+    </symbol>
+  </svg>
+
+  <!-- ===== CABECERA ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#inicio" aria-label="San Gregorio, ir al inicio">San Gregorio</a>
+
+      <nav id="menu-principal" class="site-nav" aria-label="Principal">
+        <a href="#carta">Carta</a>
+        <a href="#horario">Horario y ubicación</a>
+        <a href="#reservas">Reservas</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn btn-primary btn-small" href="tel:+34976000000">
+          <svg class="icon" aria-hidden="true"><use href="#i-phone"></use></svg>
+          Llamar
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menú">
+          <span class="nav-toggle-bars" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="contenido">
+
+    <!-- ===== INICIO ===== -->
+    <section id="inicio" class="hero gingham">
+      <div class="container hero-grid">
+
+        <div class="hero-panel">
+          <h1>Bocadillos y hamburguesas del barrio</h1>
+          <p class="lead">Desayunos, bocatas, hamburguesas y raciones en la Av. de San Gregorio. Abrimos todos los días, de mañana a noche.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#carta">Ver la carta</a>
+            <a class="btn btn-outline" href="tel:+34976000000">
+              <svg class="icon" aria-hidden="true"><use href="#i-phone"></use></svg>
+              Llamar para reservar
+            </a>
+          </div>
+        </div>
+
+        <!-- Este bloque lo completa script.js con el día y la hora actuales -->
+        <aside class="today-card" aria-label="Horario de hoy">
+          <p class="today-day" id="hoy-dia">Abrimos todos los días</p>
+          <p class="today-hours" id="hoy-horas">De mañana a noche</p>
+          <p class="today-status" id="hoy-estado" hidden>
+            <span class="dot" aria-hidden="true"></span>
+            <span id="hoy-estado-texto"></span>
+          </p>
+          <hr>
+          <address class="today-address">
+            <svg class="icon" aria-hidden="true"><use href="#i-pin"></use></svg>
+            <span>Av. de San Gregorio, 19<br>50015 Zaragoza</span>
+          </address>
+          <a class="link-light" href="https://www.google.com/maps/dir/?api=1&destination=Av.%20de%20San%20Gregorio%2C%2019%2C%2050015%20Zaragoza" target="_blank" rel="noopener">Cómo llegar</a>
+        </aside>
+
+      </div>
+    </section>
+
+    <!-- ===== CARTA ===== -->
+    <section id="carta" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>La carta</h2>
+          <p>Elige una categoría para ver los platos y los precios.</p>
+        </div>
+
+        <!-- Los botones y los platos los genera script.js a partir de la lista CARTA -->
+        <div class="carta-tabs" id="carta-tabs" role="group" aria-label="Categorías de la carta"></div>
+
+        <div class="carta-panel">
+          <ul class="carta-lista" id="carta-lista"></ul>
+          <noscript>
+            <p>Para ver la carta necesitas activar JavaScript. También puedes llamarnos al <a href="tel:+34976000000">976 00 00 00</a>.</p>
+          </noscript>
+        </div>
+
+        <p class="carta-nota">Precios con IVA incluido. Si tienes alguna alergia o intolerancia, avísanos antes de pedir.</p>
+      </div>
+    </section>
+
+    <!-- ===== HORARIO Y UBICACIÓN ===== -->
+    <section id="horario" class="section section-alt">
+      <div class="container split">
+
+        <div>
+          <h2>Horario y ubicación</h2>
+
+          <!-- data-day: 0 = domingo, 1 = lunes ... 6 = sábado. Si cambia el horario, edítalo aquí. -->
+          <table class="hours">
+            <caption class="sr-only">Horario de apertura</caption>
+            <tbody>
+              <tr data-day="1" data-open="08:00" data-close="23:00"><th scope="row">Lunes</th><td>8:00 – 23:00</td></tr>
+              <tr data-day="2" data-open="08:00" data-close="23:00"><th scope="row">Martes</th><td>8:00 – 23:00</td></tr>
+              <tr data-day="3" data-open="08:00" data-close="23:00"><th scope="row">Miércoles</th><td>8:00 – 23:00</td></tr>
+              <tr data-day="4" data-open="08:00" data-close="23:00"><th scope="row">Jueves</th><td>8:00 – 23:00</td></tr>
+              <tr data-day="5" data-open="08:00" data-close="23:30"><th scope="row">Viernes</th><td>8:00 – 23:30</td></tr>
+              <tr data-day="6" data-open="09:00" data-close="23:30"><th scope="row">Sábado</th><td>9:00 – 23:30</td></tr>
+              <tr data-day="0" data-open="09:00" data-close="23:00"><th scope="row">Domingo</th><td>9:00 – 23:00</td></tr>
+            </tbody>
+          </table>
+
+          <address class="address">
+            <svg class="icon" aria-hidden="true"><use href="#i-pin"></use></svg>
+            <span>Av. de San Gregorio, 19<br>50015 San Gregorio, Zaragoza</span>
+          </address>
+
+          <a class="btn btn-outline" href="https://www.google.com/maps/dir/?api=1&destination=Av.%20de%20San%20Gregorio%2C%2019%2C%2050015%20Zaragoza" target="_blank" rel="noopener">Cómo llegar</a>
+        </div>
+
+        <div class="map-wrap">
+          <iframe
+            title="Mapa con la ubicación del bar San Gregorio"
+            src="https://www.google.com/maps?q=Av.+de+San+Gregorio,+19,+50015+Zaragoza&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen></iframe>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== RESERVAS / CONTACTO ===== -->
+    <section id="reservas" class="section section-dark">
+      <div class="container">
+        <h2>Reserva tu mesa</h2>
+        <p class="lead">Llámanos y te guardamos sitio. Atendemos el teléfono mientras estamos abiertos.</p>
+
+        <a class="big-phone" href="tel:+34976000000">976 00 00 00</a>
+
+        <div class="cta-row">
+          <a class="btn btn-primary" href="tel:+34976000000">
+            <svg class="icon" aria-hidden="true"><use href="#i-phone"></use></svg>
+            Llamar ahora
+          </a>
+          <a class="btn btn-outline-light" href="https://www.google.com/maps/dir/?api=1&destination=Av.%20de%20San%20Gregorio%2C%2019%2C%2050015%20Zaragoza" target="_blank" rel="noopener">Cómo llegar</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== PIE ===== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="anio">2026</span> San Gregorio. Av. de San Gregorio, 19, 50015 Zaragoza.</p>
+      <!-- Cambia "Tu Nombre" (y enlaza a tu portfolio si quieres) -->
+      <p>Web creada por Tu Nombre</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
